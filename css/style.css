@@ -1,0 +1,104 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: black;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 공통 */
+* {
+    font-size: 15px;  /* 1rem = 15px */
+}
+
+.layout_width {
+    width: 1200px;
+    margin: 0 auto; /* 좌우에 auto를 주면 좌우 균등하게 옴 */
+  }
+
+
+/* 헤더 */
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+/* nav */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+/* 배너 */
+.swiper-container {
+	width:640px;
+	height:420px;
+}
+
+.swiper-slide:nth-child(2n + 1) {
+    background: url("../img/1.jpg") no-repeat center center; /* ../현재 폴더에서 나가는것(상위 폴더로) */
+}
+.swiper-slide:nth-child(2n + 2) {
+    background: url("../img/2.jpg") no-repeat center center;
+}
+
+.mySwiper .swiper-slide {
+    height: 320px;
+  }

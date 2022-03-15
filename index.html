@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BOOKS - 도서검색사이트</title>
+    </head>
+
+    <body>
+        <header class="layout_width header">
+        <h1 class="logo"><a href=""><i class="xi-book"></i>BOOKS</a></h1>
+        <form id="search-form">
+            <input id="search" type="text" required>
+            <button id="btn">검색</button>
+        </form>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="">베스트셀러</a></li>
+            <li><a href="">새로나온책</a></li>
+            <li><a href="">추천도서</a></li>
+        </ul>
+    </nav>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+    <ul class="search-sort">
+        <li class="accuracy">정확도순</li> <!-- 기본값 선택 되어 있어야함. -->
+        <li class="latest">발간일순</li>
+    </ul>
+        <table class="books">
+        <!-- 검색 결과 -->
+        </table>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/search.js"></script>
+        <script src="js/banner.js"></script>
+    </body>
+</html>
